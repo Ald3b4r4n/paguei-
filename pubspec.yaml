@@ -1,0 +1,82 @@
+name: paguei
+description: Paguei? — Controle financeiro pessoal para o mercado brasileiro.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Estado
+  flutter_riverpod: ^3.3.1
+
+  # Banco de dados
+  drift: ^2.32.1
+  sqlite3_flutter_libs: ^0.5.0
+
+  # Navegação
+  go_router: ^17.2.2
+
+  # OCR & Scanner
+  google_mlkit_text_recognition: ^0.15.1
+  mobile_scanner: ^7.2.0
+  camera: ^0.11.2
+  syncfusion_flutter_pdf: ^33.1.49
+
+  # Notificações
+  flutter_local_notifications: ^21.0.0
+  timezone: ^0.11.0
+
+  # Gráficos
+  fl_chart: ^1.2.0
+
+  # Segurança
+  flutter_secure_storage: ^10.0.0
+  local_auth: ^3.0.1
+
+  # Animações
+  flutter_animate: ^4.5.2
+  lottie: ^3.3.3
+
+  # Utilitários
+  intl: ^0.20.0
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  path: ^1.9.0
+  path_provider: ^2.1.0
+  share_plus: ^12.0.2
+  url_launcher: ^6.3.0
+  uuid: ^4.0.0
+  file_picker: ^11.0.2
+  permission_handler: ^12.0.1
+  package_info_plus: ^9.0.1
+  device_info_plus: ^12.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  drift_dev: ^2.32.1
+  build_runner: ^2.4.0
+  freezed: ^3.2.5
+  json_serializable: ^6.8.0
+  mocktail: ^1.0.0
+  golden_toolkit: ^0.15.0
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/onboarding/
+    - assets/images/categories/
+    - assets/images/empty/
+    - assets/images/banners/
+    - assets/animations/
+    - assets/icons/
