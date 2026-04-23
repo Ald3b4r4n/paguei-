@@ -52,8 +52,9 @@ class _FakeAccountRepository implements AccountRepository {
   @override
   Future<Account> update(Account account) async {
     final idx = _accounts.indexWhere((a) => a.id == account.id);
-    if (idx == -1)
+    if (idx == -1) {
       throw NotFoundException(message: 'Conta não encontrada: ${account.id}');
+    }
     _accounts[idx] = account;
     return account;
   }

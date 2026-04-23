@@ -15,16 +15,18 @@ class _FakeAccountRepository implements AccountRepository {
   @override
   Future<void> archive(String id) async {
     final account = _store[id];
-    if (account == null)
+    if (account == null) {
       throw NotFoundException(message: 'Conta não encontrada: $id');
+    }
     _store[id] = account.archive();
   }
 
   @override
   Future<void> unarchive(String id) async {
     final account = _store[id];
-    if (account == null)
+    if (account == null) {
       throw NotFoundException(message: 'Conta não encontrada: $id');
+    }
     _store[id] = account.unarchive();
   }
 
